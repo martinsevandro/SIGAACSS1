@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../main.css">
+    <title>Componentes Curriculares</title>
+ 
+</head>
+<body>
+    <header>
+        <p> UFC - SIGAA - Sistema Integrado de Gestão de Atividades Acadêmicas </p>
+    </header>
+
+    <nav>
+        <a href="painel.html">Painel de Controle</a>
+        <a href="historico.html">Histórico</a>
+        <a href="componentes.html">Componentes Curriculares</a>
+    </nav>
+    
+    <article>
+        <div>
+            <h1 style="background-color: dodgerblue;">Cadastro de Componentes Curriculares</h1>
+        </div>
+        
+        <div class="curric">
+            <form action="componentes.html" method="post">
+                <label for="name">Nome da Atividade:</label>
+                <input type="text" id="name" name="name" required/>
+                <br>
+                <label for="horas">Horas:</label>
+                <input type="number" name="horas" id="horas" required/>
+                <br>
+                <label for="data">Data:</label>
+                <input type="date" name="data" id="data" required/>
+                <br>
+                <label for="e-mail">E-mail do Responsável:</label>
+                <input type="email" name="e-mail" id="e-mail" placeholder="responsavel@mail.com" required/>
+                <br>
+                <label for="fone">Telefone do Responsável</label>
+                <input type="tel" name="fone" id="fone" placeholder="88-94002-8922" pattern="[0-9]{2}-[0-9]{5}-[0-9]{4}" required>
+                <br>
+                <input type="submit" value="Cadastrar">     
+            </form>
+        </div>
+
+    </article>
+
+    <footer>
+        <p>SIGAA | Copyright © 2010-2022 - Superintendência de Tecnologia da Informação - UFC - (85) 3366-9999 - si3asprd03.ufc.br</p>
+    </footer>
+</body>
+</html>
